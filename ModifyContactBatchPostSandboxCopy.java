@@ -1,15 +1,4 @@
-global class ModifyContactBatchPostSandboxCopy implements SandboxPostCopy{
-/*------------------------------------------------------------------------
-Author:        Rohit Kumar  
-Company:       Salesforce
-Description:   A Controller class to execute "ModifyContactRecords_Batch" post sandbox copy
-               Responsible for:
-               1 - Execute ModifyContactRecords_Batch
-              
-Test Class:    ModifyContactBatchPostSandboxCopy_Test
-History
-<Date>            <Authors Name>    <Brief Description of Change>
---------------------------------------------------------------------------*/     
+global class ModifyContactBatchPostSandboxCopy implements SandboxPostCopy{ 
     /**
      *  @desc Implementing runApexClass Method to execute the batch
      */ 

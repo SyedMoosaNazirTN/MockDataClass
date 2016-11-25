@@ -1,18 +1,4 @@
 global class ModifyContactRecords_Batch implements Database.Batchable<SObject>, Database.Stateful {
-/*------------------------------------------------------------------------
-Author:        Rohit Kumar  
-Company:       Salesforce
-Description:   A batch class created to mask contact field values . This Batch would be executed only if Organization is Sandbox or is invoed due to test class.
-               This class is executed from VF "ModifyContactPage"
-               Responsible for:
-               1 - Marking different fields in Contact to dummy values
-               2 - Field being masked would be selected from a Field Set "ContactFieldsForUpdate" on Contact Object
-               3- Logging the error into Application Log
-
-Test Class:    ModifyContactController_Test
-History
-<Date>            <Authors Name>    <Brief Description of Change>
---------------------------------------------------------------------------*/    
     
     global string emailAddress ; // Variable to hold email address
     global String jobResult = 'Success'; //keeps track of any errors during job execution
